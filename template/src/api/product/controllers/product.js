@@ -46,7 +46,7 @@ module.exports = createCoreController("api::product.product", {
       productBody.product_length = productBody.length;
       delete productBody.length;
 
-      const found = await strapi.db.query("api::product.product").findOne({
+      const found = await strapi.service("api::product.product").findOne({
         where: { medusa_id: medusaId },
       });
 
