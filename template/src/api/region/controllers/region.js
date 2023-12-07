@@ -47,7 +47,7 @@ module.exports = createCoreController("api::region.region", {
         (key) => regionBody[key] === undefined && delete regionBody[key]
       );
 
-      const found = await strapi.db.query("api::region.region").findOne({
+      const found = await strapi.service("api::region.region").findOne({
         where: { medusa_id: medusaId },
       });
 
