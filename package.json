@@ -1,4 +1,16 @@
 {
-    "name": "medusa-strapi",
-    "version": "1.0.8"
-  }
+  "name": "strapi-medusa-template",
+  "version": "1.1.0",
+  "description": "Check out documentation [here](https://docs.medusajs.com/add-plugins/strapi).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahednasser/strapi-medusa-template.git"
+  },
+  "keywords": [],
+  "author": "Shahed Nasser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shahednasser/strapi-medusa-template/issues"
+  },
+  "homepage": "https://github.com/shahednasser/strapi-medusa-template#readme"
+}
