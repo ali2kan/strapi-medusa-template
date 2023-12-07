@@ -111,7 +111,7 @@ module.exports = createCoreController("api::product-variant.product-variant", {
         .query("api::product-variant.product-variant")
         .findOne({ where: { medusa_id: medusaId } });
       if (productVariant) {
-        await strapi.db.query("api::product-variant.product-variant").delete({
+        await strapi.service("api::product-variant.product-variant").delete({
           where: { medusa_id: medusaId },
         });
         return (ctx.body = {
